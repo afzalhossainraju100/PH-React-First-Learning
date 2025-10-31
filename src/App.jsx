@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import ToDo from './ToDo.jsx'
+// import ToDo from './ToDo.jsx'
+import Food from './ToDo.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,7 +9,8 @@ function App() {
   return (
     <>
       <h1>React Core Concept</h1>
-      <ToDo />
+      {/* <ToDo task="Learn React" isDone={true} /> */}
+      <Food item="Pizza" isHungry={true} />
       {/* <Person />
       <Students />
       <Car />
