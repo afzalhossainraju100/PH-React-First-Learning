@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <h1>React Core Concept</h1>
-      <Person />
+      {/* <Person />
       <Students />
       <Car />
       <Device name="iPhone" price="$999" />
@@ -17,7 +17,7 @@ function App() {
       <Player name="Tamim" age="40" country="Bangladesh" runs="5000" />
       <Player name="Shakib" age="35" country="Bangladesh" runs="4500" />
       <Player name="Mushfiq" age="38" country="Bangladesh" runs="4000" />
-      <Sum a="20" b="30" />
+      <Sum a="20" b="30" /> */}
     </>
   )
 }
