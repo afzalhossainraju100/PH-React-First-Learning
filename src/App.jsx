@@ -17,6 +17,7 @@ function App() {
       <Player name="Tamim" age="40" country="Bangladesh" runs="5000" />
       <Player name="Shakib" age="35" country="Bangladesh" runs="4500" />
       <Player name="Mushfiq" age="38" country="Bangladesh" runs="4000" />
+      <Sum a="20" b="30" />
     </>
   )
 }
@@ -67,6 +68,17 @@ function Car(){
         <img src="./assets/react.svg" alt="Car" />
         <img src="./assets/react.svg" alt="Car" />
       </div>
+    </div>
+  );
+}
+function Sum({a, b}){
+  const C = parseInt(a);
+  const D = parseInt(b);
+  const sum = C + D;
+  return (
+    <div style={{border: '2px solid red', margin: '20px', padding: '20px'}}>
+      <h2>This is sum component</h2>
+      <p>The sum of {a} and {b} is: {sum}</p>
     </div>
   );
 }
