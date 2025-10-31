@@ -3,15 +3,34 @@ import './App.css'
 // import ToDo from './ToDo.jsx'
 import Food from './ToDo.jsx'
 import Actor from './actor.jsx'
+import Singer from './singler.jsx'
+import Library from './library.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const actors=["Bappa Raj","Shakib Khan","Riaz","Jayed Khan"]
+  // const [count, setCount] = useState(0)
+  // const actors=["Bappa Raj","Shakib Khan","Riaz","Jayed Khan"]
+
+  const singers =[
+    {id:1,name:"Arijit Singh",age:60,job:"singer"},
+    {id:2,name:"Atif Aslam",age:50,job:"singer"},
+    {id:3,name:"Salman",age:55,job:"singer"},
+  ]
+
+  const books=[
+    {id:1,title:"Book One",author:"Author A",price:"$10"},
+    {id:2,title:"Book Two",author:"Author B",price:"$15"},
+    {id:3,title:"Book Three",author:"Author C",price:"$20"},
+  ]
 
   return (
     <>
       <h1>React Core Concept</h1>
-      {actors.map(actor=><Actor actor={actor} />)}
+
+      <Library books={books} />
+      {/* {singers.map(singer=><Singer key={singer.id} singer={singer} />)} */}
+
+
+      {/* {actors.map(actor=><Actor actor={actor} />)} */}
       {/* <ToDo task="Learn React" isDone={true} />
       <Food item="Pizza" isHungry={true} /> */}
       {/* <Person />
