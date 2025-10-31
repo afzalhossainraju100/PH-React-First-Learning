@@ -2,15 +2,18 @@ import { useState } from 'react'
 import './App.css'
 // import ToDo from './ToDo.jsx'
 import Food from './ToDo.jsx'
+import Actor from './actor.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
+  const actors=["Bappa Raj","Shakib Khan","Riaz","Jayed Khan"]
 
   return (
     <>
       <h1>React Core Concept</h1>
-      {/* <ToDo task="Learn React" isDone={true} /> */}
-      <Food item="Pizza" isHungry={true} />
+      {actors.map(actor=><Actor actor={actor} />)}
+      {/* <ToDo task="Learn React" isDone={true} />
+      <Food item="Pizza" isHungry={true} /> */}
       {/* <Person />
       <Students />
       <Car />
